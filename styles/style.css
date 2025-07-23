@@ -29,10 +29,28 @@ body {
   --body-font-family: 'Inter', sans-serif;
 }
 
-.title {
+.heading {
+  margin-bottom: 50px;
 }
-.btn {
+.heading .title {
+  font-family: var(--title-font-family);
+  color: var(--title-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
 }
+.heading .title span {
+  color: var(--orange-color);
+}
+.heading .description {
+  color: var(--pharagraph-color);
+  font-family: var(--body-font-family);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 120px;
+}
+
 /* =============== */
 
 /* header styles */
@@ -100,3 +118,53 @@ header nav .navbar .menu li a:hover {
 /* =========================== */
 
 /* Plants Section styles */
+#plants-part {
+  margin: 100px 0;
+}
+#plants-part .plants-content .plants-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+#plants-part .plants-list .plant-item img {
+  width: 100%;
+}
+#plants-part .plants-list .plant-item:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+#plants-part .plants-list .plant-item .item-details {
+  text-align: center;
+  margin-top: 20px;
+}
+#plants-part .plants-list .plant-item .item-details h3 {
+  color: #111111;
+  font-family: var(--body-font-family);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#plants-part .plants-list .plant-item .item-details p {
+  color: #111111;
+  font-family: var(--body-font-family);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+#plants-part .plants-content .plants-list .plant-item .btn {
+  background: var(--orange-color);
+  color: var(--white-color);
+  font-family: var(--body-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+}
+#plants-part .plants-content .plants-list .plant-item .btn:hover {
+  background: #9b4000;
+}
+/* ================ */
