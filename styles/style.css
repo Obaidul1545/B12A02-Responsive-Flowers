@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* common styles */
+body {
+  background: rgb(245, 248, 255);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+:root {
+  --title-color: #000000;
+  --pharagraph-color: rgba(0, 0, 0, 0.502);
+  --orange-color: #e95a08;
+  --white-color: #ffffff;
+  --title-font-family: 'Noto Serif', serif;
+  --body-font-family: 'Inter', sans-serif;
+}
+
+.title {
+}
+.btn {
+}
+/* =============== */
+
+/* header styles */
+header {
+  margin: 20px 0;
+}
+
+header nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .navbar .menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+header nav .navbar .menu li a {
+  color: rgb(137, 135, 161);
+  font-family: var(--body-font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.4s;
+}
+header nav .navbar .menu li a:hover {
+  color: #252432;
+  font-weight: 700;
+}
+/* ============================= */
+
+/* banner section styles */
+#banner-part {
+  margin: 100px 0;
+}
+#banner-part .banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#banner-part .banner-content .left {
+  flex: 1;
+}
+#banner-part .banner-content .left h1 {
+  font-family: var(--title-font-family);
+  color: var(--title-color);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#banner-part .banner-content .left h1 span {
+  color: var(--orange-color);
+}
+#banner-part .banner-content .left p {
+  color: var(--pharagraph-color);
+  font-family: var(--body-font-family);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+#banner-part .banner-content .right {
+  flex: 1;
+}
+#banner-part .banner-content .right img {
+  width: 100%;
+}
+/* =========================== */
+
+/* Plants Section styles */
