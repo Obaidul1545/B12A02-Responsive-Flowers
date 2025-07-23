@@ -237,6 +237,51 @@ header nav .navbar .menu li a:hover {
     'deal-2 deal-3 deal-3';
   gap: 30px;
 }
+#latest-deal-part .latest-deal-content .latest-deal-list .deal-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#latest-deal-part .latest-deal-content .latest-deal-list .deal-item {
+  position: relative;
+}
+#latest-deal-part .latest-deal-content .latest-deal-list .deal-item .overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#latest-deal-part .latest-deal-content .deal-item .overlay-text {
+  text-align: center;
+}
+#latest-deal-part .latest-deal-content .deal-item .overlay-text h3 {
+  color: var(--white-color);
+  font-family: var(--title-font-family);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#latest-deal-part .latest-deal-content .deal-item .overlay-text a {
+  color: var(--white-color);
+  font-family: var(--body-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration-line: underline;
+}
+#latest-deal-part .latest-deal-content .deal-3 .overlay-text h3 {
+  font-size: 2.5rem;
+}
+#latest-deal-part .latest-deal-content .deal-3 .overlay-text a {
+  font-size: 1.5rem;
+}
 
 /* =============================== */
 
