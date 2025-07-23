@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul,
-a,
-li {
+
+a {
   text-decoration: none;
-  list-style: none;
 }
 
 /* common styles */
@@ -67,6 +65,7 @@ header nav .navbar .menu {
   display: flex;
   justify-content: space-between;
   gap: 48px;
+  list-style: none;
 }
 header nav .navbar .menu li a {
   color: rgb(137, 135, 161);
@@ -134,6 +133,7 @@ header nav .navbar .menu li a:hover {
 #plants-part .plants-list .plant-item:hover {
   transform: scale(1.05);
   transition: 0.5s;
+  box-shadow: 0 0 10px #ddd;
 }
 #plants-part .plants-list .plant-item .item-details {
   text-align: center;
@@ -168,3 +168,50 @@ header nav .navbar .menu li a:hover {
   background: #9b4000;
 }
 /* ================ */
+
+/* Plants Lover Section styles */
+#plants-lover-part {
+  margin: 200px 0 100px;
+}
+#plants-lover-part .plants-lover-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+#plants-lover-part .plants-lover-content .left {
+  flex: 1;
+  position: relative;
+}
+#plants-lover-part .plants-lover-content .left .badge img {
+  width: 286px;
+  position: absolute;
+  top: -122px;
+  right: -105px;
+}
+#plants-lover-part .plants-lover-content .left img {
+  width: 100%;
+}
+#plants-lover-part .plants-lover-content .right {
+  flex: 1;
+}
+#plants-lover-part .plants-lover-content .right h2 {
+  color: var(--title-color);
+  font-family: var(--title-font-family);
+  font-size: 3rem;
+  font-weight: 700;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+#plants-lover-part .plants-lover-content .right ul.lover-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+#plants-lover-part .plants-lover-content .right .lover-list li {
+  color: var(--pharagraph-color);
+  font-family: var(--body-font-family);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+/* ================= */
