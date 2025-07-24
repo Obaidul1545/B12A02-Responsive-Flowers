@@ -1,0 +1,198 @@
+/* Small Screen Styles  */
+@media screen and (max-width: 576.99px) {
+  .heading .title {
+    font-size: 1.5rem;
+  }
+  .heading .description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* navbar */
+  header nav .navbar .logo img {
+    width: 63px;
+  }
+  header nav .navbar .menu {
+    display: none;
+  }
+  header nav .navbar {
+    margin: 0 20px;
+  }
+  header nav .navbar .menu-toggle {
+    display: block;
+  }
+  header nav .navbar .menu-toggle {
+    list-style: none;
+  }
+  header nav .navbar .menu-toggle li a {
+    color: rgb(137, 135, 161);
+    font-family: var(--body-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.4s;
+  }
+  header nav .navbar .menu-toggle li a:hover {
+    color: #252432;
+    font-weight: 700;
+  }
+
+  /* banner */
+
+  #banner-part .banner-content {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  #banner-part .banner-content .left {
+    margin: 0 20px;
+  }
+  #banner-part .banner-content .left h1 {
+    font-size: 1.5rem;
+  }
+  #banner-part .banner-content .left p {
+    font-size: 1rem;
+  }
+
+  /* plants section */
+  #plants-part {
+    margin: 0 20px;
+  }
+  #plants-part .plants-content .plants-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Plants Lover Section  */
+  #plants-lover-part {
+    margin: 50px 20px;
+  }
+  #plants-lover-part .plants-lover-content .left .badge {
+    display: none;
+  }
+  #plants-lover-part .plants-lover-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #plants-lover-part .plants-lover-content .right h2 {
+    font-size: 1.5rem;
+  }
+  #plants-lover-part .plants-lover-content .right .lover-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  /* Latest Deal Section */
+  #latest-deal-part {
+    margin: 0 20px;
+  }
+  #latest-deal-part .latest-deal-content .latest-deal-list {
+    grid-template-areas:
+      'deal-1'
+      'deal-2'
+      'deal-3';
+  }
+  #latest-deal-part .latest-deal-content .deal-3 .overlay-text h3 {
+    font-size: 1.2rem;
+  }
+  #latest-deal-part .latest-deal-content .deal-3 .overlay-text a {
+    font-size: 1rem;
+  }
+
+  /* Join Section */
+
+  #join-part {
+    margin: 44px 0 20px;
+    padding: 110px 0 73px;
+  }
+  #join-part .join-content h2 {
+    font-size: 1.5rem;
+  }
+  #join-part .join-content form .btn {
+    padding: 15px;
+  }
+
+  /* footer */
+  footer {
+    margin: 0 20px;
+  }
+  footer .footer-content {
+    flex-direction: column;
+    gap: 37px;
+  }
+  footer .footer-content .social-links > div {
+    justify-content: start;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 991.99px) {
+  .heading .description {
+    padding: 0 30px;
+  }
+  /* ============== */
+  header {
+    padding: 0 20px;
+  }
+  #banner-part {
+    padding: 0 20px;
+  }
+  #banner-part .banner-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  /* =================== */
+  #plants-part {
+    margin: 0 20px;
+  }
+
+  #plants-part .plants-content .plants-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* ================== */
+
+  #plants-lover-part {
+    margin: 100px 20px 100px;
+  }
+  #plants-lover-part .plants-lover-content .left .badge img {
+    width: 200px;
+    top: -90px;
+    right: -80px;
+  }
+  #plants-lover-part .plants-lover-content .right .lover-list li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  #plants-lover-part .plants-lover-content .right h2 {
+    font-size: 1.5rem;
+  }
+  /* ================= */
+
+  #latest-deal-part {
+    margin: 0 20px;
+  }
+  #latest-deal-part .latest-deal-content .latest-deal-list {
+    grid-template-areas:
+      'deal-1 deal-2'
+      'deal-3 deal-3';
+  }
+  #latest-deal-part .latest-deal-content .deal-item img {
+    border-radius: 15px;
+  }
+
+  /* =================== */
+  #join-part {
+    margin-top: 44px;
+    padding: 110px 0 73px;
+  }
+
+  /* ================ */
+  footer {
+    margin: 0 20px;
+  }
+  footer .footer-content {
+    gap: 20px;
+  }
+
+  footer .footer-content .social-links > div {
+    flex-direction: column;
+  }
+}

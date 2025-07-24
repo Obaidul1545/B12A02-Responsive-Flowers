@@ -1,3 +1,6 @@
+.hide {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +65,9 @@ header nav .navbar {
   justify-content: space-between;
   align-items: center;
 }
+header nav .navbar .logo img {
+  width: 135px;
+}
 header nav .navbar .menu {
   display: flex;
   justify-content: space-between;
@@ -78,6 +84,9 @@ header nav .navbar .menu li a {
 header nav .navbar .menu li a:hover {
   color: #252432;
   font-weight: 700;
+}
+header nav .navbar .menu-toggle {
+  display: none;
 }
 /* ============================= */
 
