@@ -198,6 +198,13 @@ header nav .navbar .menu-toggle {
   position: absolute;
   top: -122px;
   right: -105px;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 #plants-lover-part .plants-lover-content .left img {
   width: 100%;
